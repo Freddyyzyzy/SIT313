@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: blue;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+        .header {
+            position: relative;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .header img {
+            width: 1000px; 
+            
+        }
+
+        .header .hover-text {
+            color: red;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .header img:hover + .hover-text {
+            opacity: 1;
+        }
+        .profile {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .profile img {
+            width: 250px; 
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .profile .job-description {
+            font-size: 18px;
+            color: green;
+        }
+        hr {
+            margin-top: 20px 0;
+            border: 1px solid aquamarine;
+            width: 200px;
+        }
+        .project-header {
+            margin-top: 40px;
+            position: relative;
+            text-align: center;
+            font-size: 24px;
+            color: green;
+        }
+        .project1{
+            display: flex; 
+            align-items: center; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+        .project1 img {
+            max-width: 50%; 
+            height: auto; 
+            margin-right: 20px; 
+        }
+
+        .project1 .description {
+            flex: 1; 
+            font-size: 16px;
+            color: green; 
+        }
+        .project2{
+            margin-top: 20px;
+            display: flex; 
+            align-items: center; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+        .project2 img {
+            max-width: 50%; 
+            height: auto; 
+            margin-right: 20px; 
+        }
+
+        .project2 .description {
+            flex: 1; 
+            font-size: 16px;
+            color: green; 
+        }
+        .Myphotos  {
+            position: relative;
+            text-align: center;
+            font-size: 24px;
+            color: green;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            grid-gap: 10px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="header">
+        <img src="deakin.jpg" alt=“”>
+        <div class="hover-text">Hey, I'm Freddy</div>
+    </div>
+
+    <div class="profile">
+        <img src="profile.jpg" alt="Profile Picture">
+        <div class="job-description">
+            I'am a full-stack web developer based in Melbourne, Australia.
+        </div>
+    </div>
+
+    <hr>
+    <div class="project-header">
+        <p>Here's what I've done so far.</p>
+    </div>
+    <div class="project1">
+        <img src="project1.jpg" alt="Projecte Picture">
+        <div class="description">
+            <p>Here is the description text.</p>
+        </div>
+    </div>
+    <div class="project2">
+        <img src="project2.jpg" alt="Projecte Picture">
+        <div class="description">
+            <p>Here is the description text.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="Myphotos">
+        <p>My photos</p>
+    </div>
+
+    <div class="gallery">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+        <img src="image4.jpg" alt="Image 4">
+        <img src="image5.jpg" alt="Image 5">
+        <img src="image6.jpg" alt="Image 6">
+    </div>
+
+
+</body>
+</html>
